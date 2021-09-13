@@ -1,5 +1,3 @@
-package HW_2;
-
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.util.Collections;
@@ -20,7 +18,7 @@ public class TestClosestPointPair {
         java.io.File file = new java.io.File(filePath);
 
         // Create a Scanner for the file
-        Scanner input = new Scanner(file).useLocale(Locale.US); // I had to add useLocaleFormat. Otherwise, project does not work.
+        Scanner input = new Scanner(file).useLocale(Locale.US);
 
         // read number of points and make arrays
         int numPoints = input.nextInt();
@@ -49,11 +47,11 @@ public class TestClosestPointPair {
         Point2D.Double p2;
 
         //Rad Files
-        Point2D.Double[] smallerSet = ReadFile("src/HW_2/PointFiles/SmallerSet.input");
-        Point2D.Double[] oneHundredPoints = ReadFile("src/HW_2/PointFiles/test_100.input");
-        Point2D.Double[] oneThousandPoints = ReadFile("src/HW_2/PointFiles/test_1000.input");
-        Point2D.Double[] tenThousandPoints = ReadFile("src/HW_2/PointFiles/test_10000.input");
-        Point2D.Double[] oneHundredThousandPoints = ReadFile("src/HW_2/PointFiles/test_100000.input");
+        Point2D.Double[] smallerSet = ReadFile("src/main/java/PointFiles/SmallerSet.input");
+        Point2D.Double[] oneHundredPoints = ReadFile("src/main/java/PointFiles/test_100.input");
+        Point2D.Double[] oneThousandPoints = ReadFile("src/main/java/PointFiles/test_1000.input");
+        Point2D.Double[] tenThousandPoints = ReadFile("src/main/java/PointFiles/test_10000.input");
+        Point2D.Double[] oneHundredThousandPoints = ReadFile("src/main/java/PointFiles/test_100000.input");
 
 
         System.out.println("***************************************************************************");
